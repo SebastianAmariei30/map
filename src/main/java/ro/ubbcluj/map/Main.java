@@ -23,6 +23,5 @@ public class Main {
         Service service=new Service(repou,repop);
         UI ui=new UI(service);
         ui.run();
-        System.out.println("ion");
     }
 }

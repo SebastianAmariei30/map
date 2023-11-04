@@ -16,26 +16,41 @@ public class Graph {
     }
     private void initializareMapareNoduri() {
         mapareNoduri = new HashMap<>();
-        int index=0;
-        for (Tuple<Long, Long> tuplu : muchii) {
-            if (!mapareNoduri.containsKey(tuplu.getLeft())) {
-                mapareNoduri.put(tuplu.getLeft(), index++);
-            }
-            if (!mapareNoduri.containsKey(tuplu.getRight())) {
-                mapareNoduri.put(tuplu.getRight(), index++);
-            }
+        //int index=0;
+        int[] index ={0};
+        muchii.forEach(tuplu->{
+        if (!mapareNoduri.containsKey(tuplu.getLeft())) {
+            mapareNoduri.put(tuplu.getLeft(), index[0]++);
         }
+        if (!mapareNoduri.containsKey(tuplu.getRight())) {
+            mapareNoduri.put(tuplu.getRight(), index[0]++);
+        }
+        }
+        );
+//        for (Tuple<Long, Long> tuplu : muchii) {
+//            if (!mapareNoduri.containsKey(tuplu.getLeft())) {
+//                mapareNoduri.put(tuplu.getLeft(), index++);
+//            }
+//            if (!mapareNoduri.containsKey(tuplu.getRight())) {
+//                mapareNoduri.put(tuplu.getRight(), index++);
+//            }
+//        }
     }
     private void initializareListaAdiacenta() {
         listaAdiacenta = new ArrayList<>();
         for (int i=0;i<mapareNoduri.size();i++) {
             listaAdiacenta.add(new ArrayList<>());
         }
-        for (Tuple<Long, Long> tuplu : muchii) {
+        muchii.forEach(tuplu->{
             int nodSursa =mapareNoduri.get(tuplu.getLeft());
             int nodDestinatie =mapareNoduri.get(tuplu.getRight());
             listaAdiacenta.get(nodSursa).add(nodDestinatie);
-        }
+        });
+//        for (Tuple<Long, Long> tuplu : muchii) {
+//            int nodSursa =mapareNoduri.get(tuplu.getLeft());
+//            int nodDestinatie =mapareNoduri.get(tuplu.getRight());
+//            listaAdiacenta.get(nodSursa).add(nodDestinatie);
+//        }
     }
     public List<List<Integer>>drumuriGraf() {
         boolean[] vizitat = new boolean[mapareNoduri.size()];
@@ -73,22 +88,30 @@ public class Graph {
                 drum=l;
             }
         }
-        Integer id= drum.get(0);
-        for(List<Integer> l : drumuriGraf()){
-            for(int x : l){
-                if(id==x){
-                    drum=l;
-                    break;
+        if(!drum.isEmpty()) {
+            Integer id = drum.get(0);
+            for (List<Integer> l : drumuriGraf()) {
+                for (int x : l) {
+                    if (id == x) {
+                        drum = l;
+                        break;
+                    }
                 }
             }
+            List<Long> drumFinal = new ArrayList<>();
+            drum.forEach(i -> {
+                mapareNoduri.keySet().stream()
+                        .filter(key -> Objects.equals(mapareNoduri.get(key), i))
+                        .forEach(drumFinal::add);
+            });
+            return drumFinal;
         }
-        List<Long> drumFinal=new ArrayList<>();
-        for (int i:drum){
-            for(long key:mapareNoduri.keySet())
-                if(mapareNoduri.get(key)==i)
-                    drumFinal.add(key);
-        }
-        return drumFinal;
+//        for (int i:drum){
+//            for(long key:mapareNoduri.keySet())
+//                if(mapareNoduri.get(key)==i)
+//                    drumFinal.add(key);
+//        }
+        return null;
     }
     private void cel_mai_lung_drum(int nod, boolean[] vizitat,List<Integer> drumCurent){
         Stack<Integer> stiva = new Stack<>();

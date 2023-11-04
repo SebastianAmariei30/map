@@ -16,7 +16,8 @@ public class CeaMaiSociabilaOperation extends Operatie {
     @Override
     public void executeOneOperation() {
         System.out.println("Cea mai activa comunitate este formata din:");
-        for(Utilizator utilizator: service.ceaMaiSociabila())
-            System.out.println(utilizator);
+        service.ceaMaiSociabila().forEach(System.out::println);
+//        for(Utilizator utilizator: service.ceaMaiSociabila())
+//            System.out.println(utilizator);
     }
 }

@@ -27,11 +27,13 @@ public class Service {
     }
     public void stergeUtilizator(Long id){
         List<Long> idprieteni= new ArrayList<>();
-        for (Utilizator utilizator:repou.findOne(id).get().getFriends()){
-            idprieteni.add(utilizator.getId());
-        }
-        for(Long x : idprieteni)
-            this.stergePrietenie(id,x);
+        repou.findOne(id).get().getFriends().forEach(u-> idprieteni.add(u.getId()));
+//        for (Utilizator utilizator:repou.findOne(id).get().getFriends()){
+//            idprieteni.add(utilizator.getId());
+//        }
+        idprieteni.forEach(x->this.stergePrietenie(id,x));
+//        for(Long x : idprieteni)
+//            this.stergePrietenie(id,x);
         repou.delete(id);
     }
 
@@ -58,9 +60,10 @@ public class Service {
     }
     public List<Tuple<Long,Long>> obtineLegaturi(){
         List<Tuple<Long,Long>> leg=new ArrayList<>();
-        for(Prietenie p: repop.findAll()){
-            leg.add(p.getId());
-        }
+        repop.findAll().forEach(p->leg.add(p.getId()));
+//        for(Prietenie p: repop.findAll()){
+//            leg.add(p.getId());
+//        }
         return leg;
     }
     public int nrComunitati(){
@@ -70,9 +73,14 @@ public class Service {
     public List<Utilizator> ceaMaiSociabila(){
         Graph graph=new Graph(obtineLegaturi());
         List<Utilizator> users= new ArrayList<>();
-        for(Long id: graph.drumLungMax())
-            if (repou.findOne(id).isPresent())
-                users.add(repou.findOne(id).get());
+        if(graph.drumLungMax()!=null) {
+            graph.drumLungMax().stream()
+                    .filter(id -> repou.findOne(id).isPresent())
+                    .forEach(id ->users.add(repou.findOne(id).get()));
+        }
+//        for(Long id: graph.drumLungMax())
+//            if (repou.findOne(id).isPresent())
+//                users.add(repou.findOne(id).get());
         return users;
     }
 }

@@ -12,8 +12,9 @@ public class AfiseazaUtilizatoriOperation extends Operatie {
 
     @Override
     public void executeOneOperation() {
-        for (Utilizator u : service.obtineUtilizator()){
-            System.out.println(u);
-        }
+        service.obtineUtilizator().forEach(System.out::println);
+//        for (Utilizator u : service.obtineUtilizator()){
+//            System.out.println(u);
+//        }
     }
 }
