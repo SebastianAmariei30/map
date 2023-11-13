@@ -7,5 +7,7 @@ public enum Comenzi {
     sterge_prietenie,
     nr_comunitati,
     comunitate_sociabila,
-    afiseaza_utilizatori
+    afiseaza_utilizatori,
+    afiseaza_prietenii,
+    prieteni_luna
 }

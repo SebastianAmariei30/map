@@ -12,7 +12,11 @@ public class AfiseazaUtilizatoriOperation extends Operatie {
 
     @Override
     public void executeOneOperation() {
-        service.obtineUtilizator().forEach(System.out::println);
+        if(args.length!=0){
+            System.out.println("numar parametri invalid!");
+        }
+        else
+            service.obtineUtilizatori().forEach(System.out::println);
 //        for (Utilizator u : service.obtineUtilizator()){
 //            System.out.println(u);
 //        }

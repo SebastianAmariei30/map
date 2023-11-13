@@ -10,13 +10,18 @@ public class StergeUtilizatorOperation extends Operatie {
     }
     @Override
     public void executeOneOperation() {
-        String id=args[0];
-        try{
-            service.stergeUtilizator(Long.parseLong(id));
-            System.out.println("Utilizator sters cu succes!");
+        if(args.length!=1){
+            System.out.println("numar parametri invalid!");
         }
-        catch (IllegalArgumentException e){
-            System.out.println(e);
+        else{
+            String id=args[0];
+            try{
+                service.stergeUtilizator(Long.parseLong(id));
+                System.out.println("Utilizator sters cu succes!");
+            }
+            catch (IllegalArgumentException e){
+                System.out.println(e);
+            }
         }
     }
 }

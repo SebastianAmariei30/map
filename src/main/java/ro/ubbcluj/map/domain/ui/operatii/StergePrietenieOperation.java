@@ -1,5 +1,6 @@
 package ro.ubbcluj.map.domain.ui.operatii;
 
+import ro.ubbcluj.map.domain.Tuple;
 import ro.ubbcluj.map.domain.ui.Comenzi;
 import ro.ubbcluj.map.domain.ui.Operatie;
 import ro.ubbcluj.map.service.Service;
@@ -11,14 +12,24 @@ public class StergePrietenieOperation extends Operatie {
 
     @Override
     public void executeOneOperation() {
-        String id1=args[0];
-        String id2=args[1];
-        try{
-            service.stergePrietenie(Long.parseLong(id1),Long.parseLong(id2));
-            System.out.println("Prietenie stearsa cu succes!");
+        if(args.length!=2){
+            System.out.println("numar parametri invalid!");
         }
-        catch (IllegalArgumentException e){
-            System.out.println(e);
+        else{
+            String id1=args[0];
+            String id2=args[1];
+            try{
+                if(service.obtinePrietenie(new Tuple<>(Long.parseLong(id1),Long.parseLong(id2))).isEmpty()&&
+                        service.obtinePrietenie(new Tuple<>(Long.parseLong(id2),Long.parseLong(id1))).isEmpty())
+                    System.out.println("Prietenie inexistenta!");
+                else{
+                service.stergePrietenie(Long.parseLong(id1),Long.parseLong(id2));
+                System.out.println("Prietenie stearsa cu succes!");
+                }
+            }
+            catch (IllegalArgumentException e){
+                System.out.println(e);
+            }
         }
     }
 }

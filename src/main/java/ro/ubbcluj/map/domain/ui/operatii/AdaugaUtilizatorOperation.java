@@ -11,15 +11,19 @@ public class AdaugaUtilizatorOperation extends Operatie {
     }
     @Override
     public void executeOneOperation() {
-        String id=args[0];
-        String nume=args[1];
-        String prenume=args[2];
-        try{
-            service.adaugaUtilizator(Long.parseLong(id),nume,prenume);
-            System.out.println("Utilizator adaugat cu succes!");
+        if(args.length!=2){
+            System.out.println("numar parametri invalid!");
         }
-        catch (IllegalArgumentException | ValidationException e){
-            System.out.println(e.getMessage());
+        else{
+            String nume=args[0];
+            String prenume=args[1];
+            try{
+                service.adaugaUtilizator(nume,prenume);
+                System.out.println("Utilizator adaugat cu succes!");
+            }
+            catch (IllegalArgumentException | ValidationException e){
+                System.out.println(e.getMessage());
+            }
         }
     }
 }

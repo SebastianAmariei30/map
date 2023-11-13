@@ -37,6 +37,9 @@ public class Utilizator extends Entity<Long> {
         return friends;
     }
 
+    public void setFriends(List<Utilizator> friends) {
+        this.friends = friends;
+    }
 
     @Override
     public String toString() {
@@ -45,7 +48,8 @@ public class Utilizator extends Entity<Long> {
         if(!prieteni.isEmpty())
             prieteni.delete(prieteni.length()-1,prieteni.length());
         return "Utilizator{" +
-                "firstName='" + firstName + '\'' +
+                "id="+this.getId()+'\''+
+                ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", friends=" + prieteni +
                 '}';

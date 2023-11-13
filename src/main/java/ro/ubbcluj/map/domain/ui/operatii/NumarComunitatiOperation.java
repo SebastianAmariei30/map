@@ -11,6 +11,10 @@ public class NumarComunitatiOperation extends Operatie {
 
     @Override
     public void executeOneOperation() {
-        System.out.println("In total sunt: "+service.nrComunitati()+" comunitati");
+        if(args.length!=0){
+            System.out.println("numar parametri invalid!");
+        }
+        else
+            System.out.println("In total sunt: "+service.nrComunitati()+" comunitati");
     }
 }

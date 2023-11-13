@@ -15,8 +15,13 @@ public class CeaMaiSociabilaOperation extends Operatie {
 
     @Override
     public void executeOneOperation() {
-        System.out.println("Cea mai activa comunitate este formata din:");
-        service.ceaMaiSociabila().forEach(System.out::println);
+        if(args.length!=0){
+            System.out.println("numar parametri invalid!");
+        }
+        else{
+            System.out.println("Cea mai activa comunitate este formata din:");
+            service.ceaMaiSociabila().forEach(x-> System.out.println(x.getId()+" " + x.getFirstName()+" " +x.getLastName()));
+        }
 //        for(Utilizator utilizator: service.ceaMaiSociabila())
 //            System.out.println(utilizator);
     }

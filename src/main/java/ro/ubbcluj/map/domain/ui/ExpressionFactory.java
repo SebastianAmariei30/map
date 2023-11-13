@@ -24,6 +24,10 @@ public class ExpressionFactory {
             return new CeaMaiSociabilaOperation(args,service);
         if(comanda==Comenzi.afiseaza_utilizatori)
             return new AfiseazaUtilizatoriOperation(args,service);
+        if(comanda==Comenzi.afiseaza_prietenii)
+            return new AfiseazaPrieteniiOperation(args,service);
+        if(comanda==Comenzi.prieteni_luna)
+            return new PrieteniLunaOperation(args,service);
         return null;
     }
 }
