@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cc4864b5-bac2-4bae-badc-c58d2b119c30" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/FriendshipController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/HelloApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/ReceivedMessagesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/UserOptionsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/domain/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/domain/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/domain/Prietenie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/domain/Tuple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/domain/Utilizator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/domain/ui/Comenzi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/domain/ui/ExpressionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/domain/ui/ExpressionParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/domain/ui/Operatie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/domain/ui/UI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/domain/ui/operatii/AdaugaPrietenieOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/domain/ui/operatii/AdaugaUtilizatorOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/domain/ui/operatii/AfiseazaPrieteniiOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/domain/ui/operatii/AfiseazaUtilizatoriOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/domain/ui/operatii/CeaMaiSociabilaOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/domain/ui/operatii/NumarComunitatiOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/domain/ui/operatii/PrieteniLunaOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/domain/ui/operatii/StergePrietenieOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/domain/ui/operatii/StergeUtilizatorOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/domain/validators/MessageValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/domain/validators/PrietenieValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/domain/validators/UtilizatorValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/domain/validators/ValidationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/domain/validators/Validator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/graph/Graph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/repository/AbstractFileRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/repository/FriendshipsDPRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/repository/InMemoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/repository/MessagesDPRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/repository/Repository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/repository/UsersDBRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/repository/UtilizatorFileRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/service/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/utils/controller/AddFriendshipController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/utils/controller/AddUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/utils/controller/ConvUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/utils/controller/EditUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/utils/controller/FriendRequestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/utils/controller/MessageAlert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/utils/controller/PendingRequestsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/utils/controller/ReplyMessageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/utils/controller/SendMessageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/utils/observer/Observable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/ubbcluj/map/demogui/utils/observer/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ro/ubbcluj/map/demogui/addfriendship-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ro/ubbcluj/map/demogui/adduser-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ro/ubbcluj/map/demogui/conv-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ro/ubbcluj/map/demogui/edituser-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ro/ubbcluj/map/demogui/friendrequest-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ro/ubbcluj/map/demogui/friendship-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ro/ubbcluj/map/demogui/pendingrequests-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ro/ubbcluj/map/demogui/receivedmessages-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ro/ubbcluj/map/demogui/sendmessage-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ro/ubbcluj/map/demogui/user-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ro/ubbcluj/map/demogui/useroptions-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ro/ubbcluj/map/demogui/viewmessage-view.fxml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="FxmlFile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2Y9wz2HdKVJELFzqh5TjkkYEWQ9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/andre/IdeaProjects/demogui/src/main/resources/ro/ubbcluj/map/demogui&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ],
+    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect&quot;: [
+      &quot;PostgreSQL&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\andre\IdeaProjects\demogui\src\main\resources\ro\ubbcluj\map\demogui" />
+      <recent name="C:\Users\andre\IdeaProjects\demogui\src\main\java\ro\ubbcluj\map\demogui" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ro.ubbcluj.map.demogui" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ro.ubbcluj.map.demogui.utils.controller" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cc4864b5-bac2-4bae-badc-c58d2b119c30" name="Changes" comment="" />
+      <created>1699951363821</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699951363821</updated>
+      <workItem from="1699951365560" duration="2832000" />
+      <workItem from="1700065021663" duration="10707000" />
+      <workItem from="1700226853283" duration="3885000" />
+      <workItem from="1700237249392" duration="1531000" />
+      <workItem from="1700569609577" duration="8233000" />
+      <workItem from="1700583406755" duration="3938000" />
+      <workItem from="1700593189806" duration="31412000" />
+      <workItem from="1700816403835" duration="7788000" />
+      <workItem from="1701084978202" duration="456000" />
+      <workItem from="1701086441462" duration="2573000" />
+      <workItem from="1701091079815" duration="2565000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
